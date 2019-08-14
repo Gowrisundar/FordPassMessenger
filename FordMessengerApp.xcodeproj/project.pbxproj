@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61D00B2B2303E444007E4B8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D00B2A2303E444007E4B8D /* AppDelegate.swift */; };
+		61D00B2D2303E444007E4B8D /* MessengerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D00B2C2303E444007E4B8D /* MessengerViewController.swift */; };
+		61D00B322303E445007E4B8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61D00B312303E445007E4B8D /* Assets.xcassets */; };
+		61D00B402303E445007E4B8D /* FordMessengerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D00B3F2303E445007E4B8D /* FordMessengerAppTests.swift */; };
+		61D00B4B2303E445007E4B8D /* FordMessengerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D00B4A2303E445007E4B8D /* FordMessengerAppUITests.swift */; };
+		61D00B592303E618007E4B8D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D00B582303E618007E4B8D /* SnapKit.framework */; };
+		61D00B5A2303E618007E4B8D /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 61D00B582303E618007E4B8D /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		61D00B5F2303E778007E4B8D /* MessengerViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D00B5E2303E778007E4B8D /* MessengerViewCoordinator.swift */; };
+		61D00B652303EA16007E4B8D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D00B642303EA16007E4B8D /* Coordinator.swift */; };
+		61D00B672303FD35007E4B8D /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D00B662303FD35007E4B8D /* MessageModel.swift */; };
+		61D00B6A2303FEA7007E4B8D /* MessageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D00B692303FEA7007E4B8D /* MessageListCell.swift */; };
+		61D00B6C2304136A007E4B8D /* MessagesWithFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D00B6B2304136A007E4B8D /* MessagesWithFriends.swift */; };
+		61D00B7023042785007E4B8D /* DetailedMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D00B6F23042785007E4B8D /* DetailedMessageViewController.swift */; };
+		61D00B7223042D9F007E4B8D /* DetailedMessageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D00B7123042D9F007E4B8D /* DetailedMessageListCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61D00B3C2303E445007E4B8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61D00B1F2303E444007E4B8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61D00B262303E444007E4B8D;
+			remoteInfo = FordMessengerApp;
+		};
+		61D00B472303E445007E4B8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61D00B1F2303E444007E4B8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61D00B262303E444007E4B8D;
+			remoteInfo = FordMessengerApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		61D00B5B2303E618007E4B8D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				61D00B5A2303E618007E4B8D /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		61D00B272303E444007E4B8D /* FordMessengerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FordMessengerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61D00B2A2303E444007E4B8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61D00B2C2303E444007E4B8D /* MessengerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerViewController.swift; sourceTree = "<group>"; };
+		61D00B312303E445007E4B8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61D00B362303E445007E4B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61D00B3B2303E445007E4B8D /* FordMessengerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FordMessengerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61D00B3F2303E445007E4B8D /* FordMessengerAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FordMessengerAppTests.swift; sourceTree = "<group>"; };
+		61D00B412303E445007E4B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61D00B462303E445007E4B8D /* FordMessengerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FordMessengerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61D00B4A2303E445007E4B8D /* FordMessengerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FordMessengerAppUITests.swift; sourceTree = "<group>"; };
+		61D00B4C2303E445007E4B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61D00B582303E618007E4B8D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		61D00B5E2303E778007E4B8D /* MessengerViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerViewCoordinator.swift; sourceTree = "<group>"; };
+		61D00B642303EA16007E4B8D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		61D00B662303FD35007E4B8D /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		61D00B692303FEA7007E4B8D /* MessageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListCell.swift; sourceTree = "<group>"; };
+		61D00B6B2304136A007E4B8D /* MessagesWithFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesWithFriends.swift; sourceTree = "<group>"; };
+		61D00B6F23042785007E4B8D /* DetailedMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedMessageViewController.swift; sourceTree = "<group>"; };
+		61D00B7123042D9F007E4B8D /* DetailedMessageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedMessageListCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61D00B242303E444007E4B8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61D00B592303E618007E4B8D /* SnapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D00B382303E445007E4B8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D00B432303E445007E4B8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61D00B1E2303E444007E4B8D = {
+			isa = PBXGroup;
+			children = (
+				61D00B582303E618007E4B8D /* SnapKit.framework */,
+				61D00B292303E444007E4B8D /* FordMessengerApp */,
+				61D00B3E2303E445007E4B8D /* FordMessengerAppTests */,
+				61D00B492303E445007E4B8D /* FordMessengerAppUITests */,
+				61D00B282303E444007E4B8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61D00B282303E444007E4B8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61D00B272303E444007E4B8D /* FordMessengerApp.app */,
+				61D00B3B2303E445007E4B8D /* FordMessengerAppTests.xctest */,
+				61D00B462303E445007E4B8D /* FordMessengerAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61D00B292303E444007E4B8D /* FordMessengerApp */ = {
+			isa = PBXGroup;
+			children = (
+				61D00B682303FE7F007E4B8D /* Customized */,
+				61D00B632303E7EC007E4B8D /* Models */,
+				61D00B602303E77D007E4B8D /* Coordinators */,
+				61D00B5D2303E681007E4B8D /* Views */,
+				61D00B5C2303E657007E4B8D /* Support */,
+				61D00B2A2303E444007E4B8D /* AppDelegate.swift */,
+				61D00B362303E445007E4B8D /* Info.plist */,
+			);
+			path = FordMessengerApp;
+			sourceTree = "<group>";
+		};
+		61D00B3E2303E445007E4B8D /* FordMessengerAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				61D00B3F2303E445007E4B8D /* FordMessengerAppTests.swift */,
+				61D00B412303E445007E4B8D /* Info.plist */,
+			);
+			path = FordMessengerAppTests;
+			sourceTree = "<group>";
+		};
+		61D00B492303E445007E4B8D /* FordMessengerAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				61D00B4A2303E445007E4B8D /* FordMessengerAppUITests.swift */,
+				61D00B4C2303E445007E4B8D /* Info.plist */,
+			);
+			path = FordMessengerAppUITests;
+			sourceTree = "<group>";
+		};
+		61D00B5C2303E657007E4B8D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				61D00B312303E445007E4B8D /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		61D00B5D2303E681007E4B8D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				61D00B6F23042785007E4B8D /* DetailedMessageViewController.swift */,
+				61D00B2C2303E444007E4B8D /* MessengerViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		61D00B602303E77D007E4B8D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				61D00B5E2303E778007E4B8D /* MessengerViewCoordinator.swift */,
+				61D00B642303EA16007E4B8D /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		61D00B632303E7EC007E4B8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				61D00B662303FD35007E4B8D /* MessageModel.swift */,
+				61D00B6B2304136A007E4B8D /* MessagesWithFriends.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		61D00B682303FE7F007E4B8D /* Customized */ = {
+			isa = PBXGroup;
+			children = (
+				61D00B692303FEA7007E4B8D /* MessageListCell.swift */,
+				61D00B7123042D9F007E4B8D /* DetailedMessageListCell.swift */,
+			);
+			path = Customized;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61D00B262303E444007E4B8D /* FordMessengerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61D00B4F2303E445007E4B8D /* Build configuration list for PBXNativeTarget "FordMessengerApp" */;
+			buildPhases = (
+				61D00B232303E444007E4B8D /* Sources */,
+				61D00B242303E444007E4B8D /* Frameworks */,
+				61D00B252303E444007E4B8D /* Resources */,
+				61D00B5B2303E618007E4B8D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FordMessengerApp;
+			productName = FordMessengerApp;
+			productReference = 61D00B272303E444007E4B8D /* FordMessengerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61D00B3A2303E445007E4B8D /* FordMessengerAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61D00B522303E445007E4B8D /* Build configuration list for PBXNativeTarget "FordMessengerAppTests" */;
+			buildPhases = (
+				61D00B372303E445007E4B8D /* Sources */,
+				61D00B382303E445007E4B8D /* Frameworks */,
+				61D00B392303E445007E4B8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61D00B3D2303E445007E4B8D /* PBXTargetDependency */,
+			);
+			name = FordMessengerAppTests;
+			productName = FordMessengerAppTests;
+			productReference = 61D00B3B2303E445007E4B8D /* FordMessengerAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		61D00B452303E445007E4B8D /* FordMessengerAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61D00B552303E445007E4B8D /* Build configuration list for PBXNativeTarget "FordMessengerAppUITests" */;
+			buildPhases = (
+				61D00B422303E445007E4B8D /* Sources */,
+				61D00B432303E445007E4B8D /* Frameworks */,
+				61D00B442303E445007E4B8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61D00B482303E445007E4B8D /* PBXTargetDependency */,
+			);
+			name = FordMessengerAppUITests;
+			productName = FordMessengerAppUITests;
+			productReference = 61D00B462303E445007E4B8D /* FordMessengerAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61D00B1F2303E444007E4B8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = fordlabs;
+				TargetAttributes = {
+					61D00B262303E444007E4B8D = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					61D00B3A2303E445007E4B8D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 61D00B262303E444007E4B8D;
+					};
+					61D00B452303E445007E4B8D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 61D00B262303E444007E4B8D;
+					};
+				};
+			};
+			buildConfigurationList = 61D00B222303E444007E4B8D /* Build configuration list for PBXProject "FordMessengerApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61D00B1E2303E444007E4B8D;
+			productRefGroup = 61D00B282303E444007E4B8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61D00B262303E444007E4B8D /* FordMessengerApp */,
+				61D00B3A2303E445007E4B8D /* FordMessengerAppTests */,
+				61D00B452303E445007E4B8D /* FordMessengerAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61D00B252303E444007E4B8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61D00B322303E445007E4B8D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D00B392303E445007E4B8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D00B442303E445007E4B8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61D00B232303E444007E4B8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61D00B672303FD35007E4B8D /* MessageModel.swift in Sources */,
+				61D00B6C2304136A007E4B8D /* MessagesWithFriends.swift in Sources */,
+				61D00B652303EA16007E4B8D /* Coordinator.swift in Sources */,
+				61D00B2D2303E444007E4B8D /* MessengerViewController.swift in Sources */,
+				61D00B6A2303FEA7007E4B8D /* MessageListCell.swift in Sources */,
+				61D00B2B2303E444007E4B8D /* AppDelegate.swift in Sources */,
+				61D00B7023042785007E4B8D /* DetailedMessageViewController.swift in Sources */,
+				61D00B7223042D9F007E4B8D /* DetailedMessageListCell.swift in Sources */,
+				61D00B5F2303E778007E4B8D /* MessengerViewCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D00B372303E445007E4B8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61D00B402303E445007E4B8D /* FordMessengerAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D00B422303E445007E4B8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61D00B4B2303E445007E4B8D /* FordMessengerAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61D00B3D2303E445007E4B8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61D00B262303E444007E4B8D /* FordMessengerApp */;
+			targetProxy = 61D00B3C2303E445007E4B8D /* PBXContainerItemProxy */;
+		};
+		61D00B482303E445007E4B8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61D00B262303E444007E4B8D /* FordMessengerApp */;
+			targetProxy = 61D00B472303E445007E4B8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		61D00B4D2303E445007E4B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		61D00B4E2303E445007E4B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61D00B502303E445007E4B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = FordMessengerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ford.FordMessengerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61D00B512303E445007E4B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = FordMessengerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ford.FordMessengerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		61D00B532303E445007E4B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FordMessengerAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ford.FordMessengerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FordMessengerApp.app/FordMessengerApp";
+			};
+			name = Debug;
+		};
+		61D00B542303E445007E4B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FordMessengerAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ford.FordMessengerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FordMessengerApp.app/FordMessengerApp";
+			};
+			name = Release;
+		};
+		61D00B562303E445007E4B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FordMessengerAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ford.FordMessengerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FordMessengerApp;
+			};
+			name = Debug;
+		};
+		61D00B572303E445007E4B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FordMessengerAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ford.FordMessengerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FordMessengerApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61D00B222303E444007E4B8D /* Build configuration list for PBXProject "FordMessengerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61D00B4D2303E445007E4B8D /* Debug */,
+				61D00B4E2303E445007E4B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61D00B4F2303E445007E4B8D /* Build configuration list for PBXNativeTarget "FordMessengerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61D00B502303E445007E4B8D /* Debug */,
+				61D00B512303E445007E4B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61D00B522303E445007E4B8D /* Build configuration list for PBXNativeTarget "FordMessengerAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61D00B532303E445007E4B8D /* Debug */,
+				61D00B542303E445007E4B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61D00B552303E445007E4B8D /* Build configuration list for PBXNativeTarget "FordMessengerAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61D00B562303E445007E4B8D /* Debug */,
+				61D00B572303E445007E4B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61D00B1F2303E444007E4B8D /* Project object */;
+}
